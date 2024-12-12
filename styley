@@ -1,0 +1,474 @@
+/* Styles généraux */
+body {
+    font-family: Oswald, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: indigo;
+    height: 100vh;
+    overflow-x: hidden; /* Pas de scroll horizontal */
+}
+
+.banniere {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 450px; /* Ajustez à votre bannière */
+    z-index: 1000;
+}
+
+.banniere img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texte-accueil {
+    text-align: justify;  /* Texte justifié */
+    position: relative;
+    max-width: 70%; /* Largeur maximale pour éviter une trop grande étendue */
+    margin: 30px auto; /* Centrage horizontal et espacement vertical */
+    padding: 20px; /* Espacement intérieur pour aérer le contenu */
+    background-color: #444; /* Couleur de fond gris foncé */
+    color: white; /* Texte en blanc pour un bon contraste */
+    border: 3px solid #555; /* Bordure légèrement plus claire que le fond */
+    border-radius: 15px; /* Coins arrondis pour un style moderne */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7); /* Ombre marquée pour démarquer la box */
+    font-size: 20px; /* Taille de texte confortable */
+    line-height: 1.8; /* Espacement entre les lignes */
+    text-align: center; /* Centrer le texte */
+}
+
+/* Style pour les paragraphes internes */
+.texte-accueil p {
+    text-align: justify;  /* Texte justifié */
+    margin: 0; /* Supprime les marges des paragraphes */
+    padding: 0; /* Supprime les espaces inutiles */
+    line-height: 1.5;  /* Espace entre les lignes pour améliorer la lisibilité */
+    margin-bottom: 20px; /* Ajout d'un espacement entre les paragraphes */
+}
+
+/* Appliquer du gras à certains mots avec <strong> */
+strong {
+    font-weight: bold; /* Texte en gras */
+}
+
+/* Effet de survol sur le texte en highlight */
+.highlight {
+    color: #FFD700;  /* Couleur dorée */
+    font-weight: bold;
+    position: relative;  /* Permet d'utiliser un pseudo-élément positionné absolu */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Transition pour le changement de couleur et d'ombre */
+}
+
+/* Effet de survol sur le texte en highlight */
+.highlight:hover {
+    color: #FF6347;  /* Changement de couleur lors du survol */
+    text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700; /* Ombre plus subtile et discrète */
+}
+
+/* Effet de particules brillantes autour du texte */
+.highlight::before {
+    content: '';
+    position: absolute;
+    top: 50%;  /* Positionné à 50% du texte en hauteur */
+    left: 50%;  /* Positionné à 50% du texte en largeur */
+    transform: translate(-50%, -50%); /* Centre les particules parfaitement autour du texte */
+    width: 150%;  /* Taille des particules réduite */
+    height: 150%;  /* Taille des particules réduite */
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.6) 20%, transparent 50%); /* Particules moins lumineuses */
+    animation: particles 2s infinite ease-out;  /* Animation plus lente */
+    border-radius: 50%;
+    opacity: 0;  /* Masquer les particules par défaut */
+}
+
+/* Animation de particules */
+@keyframes particles {
+    0% {
+        opacity: 0.3;  /* Opacité plus faible */
+        transform: translate(-50%, -50%) scale(0);
+    }
+    50% {
+        opacity: 0.8;  /* Augmentation de l'opacité mais moins intense */
+        transform: translate(-50%, -50%) scale(1.2);  /* Taille réduite des particules */
+    }
+    100% {
+        opacity: 0.3;  /* Réduction de l'opacité */
+        transform: translate(-50%, -50%) scale(0);
+    }
+}
+
+
+.contenu {
+    margin-top: 150px; /* Commence après la bannière */
+    padding: 20px;
+    overflow-y: auto; /* Scroll vertical si contenu trop long */
+}
+
+.separateur {
+    height: 2px;
+    background-color: white;
+}
+
+/* Menu latéral */
+.menu {
+    position: fixed;
+    top: 0;
+    left: -200px; /* Caché par défaut */
+    width: 200px;
+    height: 100%;
+    background-color: black;
+    z-index: 1000;
+    transition: left 0.3s;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.menu-ouvert {
+    left: 0; /* Affiche le menu */
+}
+
+.menu-bouton {
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid white;
+    z-index: 1001;
+}
+
+.menu-deroulant {
+    list-style: none;
+    padding: 0;
+    margin: 60px 0 0;
+}
+
+.menu-deroulant li {
+    border-bottom: 1px solid white;
+}
+
+/* Style de base pour les liens des onglets */
+.menu-deroulant li a {
+    color: indigo; /* Couleur du texte par défaut */
+    text-decoration: none; /* Pas de soulignement */
+    padding: 15px 20px;
+    display: block;
+    border: 2px solid transparent; /* Bordure invisible par défaut */
+    border-radius: 10px; /* Coins arrondis pour un effet plus élégant */
+    font-weight: bold; /* Texte en gras */
+    background: linear-gradient(90deg, #444, #222); /* Dégradé de fond sombre */
+    transition: all 0.3s ease; /* Animation douce */
+    position: relative; /* Nécessaire pour ajouter les particules lumineuses */
+    z-index: 1;
+}
+
+/* Effet doré au survol */
+.menu-deroulant li a:hover {
+    color: #FFD700; /* Couleur dorée */
+    background: linear-gradient(90deg, #222, #444); /* Inverse le dégradé */
+    border-color: #FFD700; /* Bordure dorée */
+    box-shadow: 0 0 15px #FFD700; /* Lueur dorée */
+}
+
+/* Effet lumineux lorsque le menu est ouvert */
+.menu-deroulant li a::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border-radius: 15px; /* Coins arrondis */
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.8), transparent);
+    animation: casino-lights 2s linear infinite; /* Animation de scintillement */
+    z-index: -1; /* Derrière le contenu */
+    opacity: 0; /* Invisible par défaut */
+}
+
+/* Activation de l'effet lumineux */
+.menu-deroulant li a.active::before,
+.menu-ouvert .menu-deroulant li a::before {
+    opacity: 1; /* Activer l'effet lumineux */
+}
+
+/* Animation des lumières scintillantes */
+@keyframes casino-lights {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+/* Particules lumineuses */
+.menu-deroulant li a::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background: radial-gradient(circle, rgba(255, 215, 0, 1) 0%, transparent 70%);
+    animation: sparkle 2s infinite ease-in-out;
+    opacity: 0;
+    z-index: 2;
+}
+
+/* Activation des particules */
+.menu-ouvert .menu-deroulant li a::after {
+    opacity: 1; /* Particules visibles uniquement dans le menu ouvert */
+}
+
+/* Animation des particules lumineuses */
+@keyframes sparkle {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+    }
+}
+
+/* Contenu principal */
+.contenu {
+    margin-left: 200px;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: calc(100vh - 302px); /* Ajustement pour inclure la hauteur de la bannière et du séparateur */
+}
+
+.objets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.objet {
+    width: 200px;
+    height: 300px;
+    background-color: #222;
+    color: indigo;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer; /* Pour signaler que l'objet est cliquable */
+}
+
+.objet img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.objet:hover img {
+    transform: scale(1.1); /* Agrandissement au survol */
+}
+
+.titre-sur-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.objet:hover .titre-sur-image {
+    opacity: 1; /* Affiche le titre sur l'image au survol */
+}
+
+/* Style pour la description avec scroll */
+.description {
+    position: fixed; /* Pour rester visible au centre de l'écran */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centre le cadre */
+    width: 400px; /* Largeur de la description */
+    max-height: 300px; /* Limite la hauteur */
+    background-color: #222; /* Fond sombre */
+    color: white; /* Texte en blanc */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour un effet élégant */
+    padding: 20px;
+    overflow-y: auto; /* Ajoute un scroll vertical si le contenu dépasse */
+    display: none; /* Cachée par défaut */
+    z-index: 1000; /* Au-dessus des autres éléments */
+}
+
+body {
+    overflow-y: scroll; /* Toujours afficher une barre de défilement verticale */
+}
+.banniere-titre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;
+}
+.banniere {
+    position: relative;
+}
+section {
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+.onglet {
+    display: none; /* Les onglets sont masqués par défaut */
+}
+
+
+/* Style des titres sous la bannière de chaque onglet */
+.titre-sous-banniere {
+    font-size: 1.5rem; /* Taille du texte */
+    font-weight: bold; /* Texte en gras */
+    color: indigo; /* Couleur du texte */
+    text-align: center;
+    margin-bottom: 20px; /* Espacement sous le titre */
+    margin-top: 100px; /* Décale le titre vers le bas pour éviter qu'il soit coupé par la bannière */
+    position: relative; /* Nécessaire pour les effets lumineux */
+    padding: 10px;
+    background: linear-gradient(90deg, #444, #222); /* Fond dégradé pour un effet sombre */
+    border-radius: 10px; /* Coins arrondis */
+    transition: all 0.3s ease; /* Transition douce */
+}
+
+/* Effet doré au survol du titre sous la bannière */
+.titre-sous-banniere:hover {
+    color: #FFD700; /* Couleur dorée */
+    background: linear-gradient(90deg, #222, #444); /* Inverse le dégradé */
+    border-color: #FFD700; /* Bordure dorée */
+    box-shadow: 0 0 15px #FFD700; /* Lueur dorée */
+}
+
+/* Effet lumineux autour du titre sous la bannière */
+.titre-sous-banniere::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border-radius: 15px; /* Coins arrondis */
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.8), transparent);
+    animation: casino-lights 2s linear infinite; /* Animation de scintillement */
+    z-index: -1; /* Derrière le texte */
+    opacity: 0; /* Invisible par défaut */
+}
+
+/* Activation de l'effet lumineux autour du titre sous la bannière */
+.titre-sous-banniere.active::before {
+    opacity: 1; /* Activer l'effet lumineux au survol */
+}
+
+/* Animation des lumières scintillantes */
+@keyframes casino-lights {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+/* Particules lumineuses autour du titre sous la bannière */
+.titre-sous-banniere::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background: radial-gradient(circle, rgba(255, 215, 0, 1) 0%, transparent 70%);
+    animation: sparkle 2s infinite ease-in-out;
+    opacity: 0;
+    z-index: 2;
+}
+
+/* Activation des particules lumineuses */
+.titre-sous-banniere.active::after {
+    opacity: 1; /* Particules visibles uniquement quand actif */
+}
+
+/* Animation des particules lumineuses */
+@keyframes sparkle {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+    }
+}
+
+/* Positionner le trademark en bas à droite de la page */
+.trademark {
+    position: fixed;
+    bottom: 10px; /* Espacement depuis le bas de la page */
+    right: 10px;  /* Espacement depuis le côté droit de la page */
+    display: flex;
+    align-items: center; /* Aligner l'image et le texte verticalement */
+    gap: 10px; /* Espacement entre l'image et le texte */
+    color: white; /* Couleur du texte */
+    font-size: 12px; /* Taille de la police */
+    font-family: Arial, sans-serif;
+    z-index: 9999; /* Assurer qu'il est au-dessus des autres éléments */
+}
+
+/* Taille et ajustement de l'image */
+.trademark-logo {
+    width: 30px; /* Ajustez la taille de l'image */
+    height: auto;
+}
+
+/* Style pour le texte du Trademark */
+.trademark span {
+    font-size: 12px; /* Ajustez la taille du texte */
+    font-weight: bold;
+    color: white;
+    opacity: 0.7; /* Légèrement transparent pour le rendre discret */
+}
