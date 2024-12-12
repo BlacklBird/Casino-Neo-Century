@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Casino Neo Century</title>
+    <link rel="stylesheet" href="styley.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="banniere">
+            <img src="https://cdnb.artstation.com/p/assets/images/images/015/638/575/large/simon-krieg-scifi-casino.jpg?1549051426" alt="Bannière">
+            <div class="banniere-titre">NEO CENTURY CASINO KRAMER</div>
+        </div>
+        <div class="separateur"></div>
+    </header>
+    <nav class="menu">
+        <div class="menu-bouton" onclick="toggleMenu()">☰</div>
+        <ul class="menu-deroulant">
+            <li><a href="#onglet1" data-banner="https://www.taipavillagemacau.com/wp-content/uploads/2020/09/mo2049_grandlisboa_shot_2_ricardolima_medres.png">Pallier Commun</a></li>
+            <li><a href="#onglet2" data-banner="https://preview.redd.it/bxmhoira9w361.jpg?auto=webp&s=2c6048464cf6e0912c3cb6144d09c6c70aade873">Pallier Rare</a></li>
+            <li><a href="#onglet3" data-banner="https://rare-gallery.com/uploads/posts/1010139-city-night-cyberpunk-artwork-futuristic-city-light-crowd-nightclub.jpg">Pallier Ancien</a></li>
+            <li><a href="#onglet4" data-banner="https://www.everspace.game/app/uploads/2020/12/everspace2_casino_bar_1920x1080.jpg">Palier Eternel</a></li>
+            <li><a href="#onglet5" data-banner="https://blog.blockspingaming.com/wp-content/uploads/2024/07/image_2024_07_05T08_53_23_366Z-1870x1048.png">Pallier Infini</a></li>
+        </ul>
+    </nav>
+
+    <div id="texte-accueil" style="display: block;" class="texte-accueil">
+        <p>"Entrez dans le monde éblouissant de <span class="highlight">l'Opulence Kramer</span>, où chaque jeton compte et chaque pari est une promesse d'ascension. Notre casino n'est pas seulement un lieu de jeu, mais une véritable opportunité d'enrichissement. Avec des lots incroyables et des chances exceptionnelles de transformer votre fortune, saisissez l'instant et faites prospérer vos ambitions dans le seul endroit où l’avenir se joue à chaque carte. Venez, et faites de vos rêves une réalité plus précieuse que jamais."</p>
+        <p>"<span class="highlight">Bienvenue dans l'univers raffiné du Casino Kramer</span>, où chaque jeu est une promesse de grandeur. Ici, la générosité de la famille Kramer ouvre la voie à une opportunité sans précédent : celle de remporter des lots toujours plus merveilleux, de conquérir une richesse insoupçonnée, et de voir vos ambitions se concrétiser. Dans notre vision, chaque victoire est partagée, chaque succès est collectif, et grâce à notre système, chacun a la chance de s'enrichir. N'est-ce pas là la véritable essence du progrès ? Après tout, lorsque le profit prospère, il profite à tous. Participez, laissez-vous guider par l’opportunité, et récoltez les fruits de la bienveillance Kramer."</p>
+        <p>"Au <span class="highlight">Casino Kramer</span>, nous croyons en l'ascension par la récompense. Chaque client fidèle a la possibilité d'atteindre des niveaux de privilège de plus en plus prestigieux. Plus vous jouez, plus vous grimpez, et plus les avantages deviennent exclusifs. Voici les paliers accessibles, chacun offrant son lot d’avantages et de luxe débridé</p>
+        <p><span class="highlight">Commun</span> Le point de départ, où les premières récompenses se manifestent. En accédant à ce grade, vous entrez dans l’univers Kramer et bénéficiez déjà de promotions régulières, d’offres spéciales et de cadeaux d’une valeur modeste. Un début prometteur, qui pave le chemin vers de plus grandes opportunités.</p>
+        <p><span class="highlight">Rare</span> À ce niveau, vous êtes reconnu pour votre loyauté. En tant que membre Rare, vous avez accès à des bonus d'exception, à des jeux exclusifs et à des tirages spéciaux réservés uniquement à cette élite. Le raffinement commence ici : profitez d’un traitement privilégié et d’une attention qui vous place déjà au sommet de l’exclusivité.</p>
+        <p><span class="highlight">Ancien</span> Un rang prestigieux, réservé aux joueurs de longue date. Les Anciens sont traités avec une vénération particulière et ont accès à des événements privés, à des lots somptueux, et à un service concierge qui veille à chaque besoin. C'est à ce niveau que la véritable richesse se dévoile, avec des récompenses exceptionnelles qui viennent récompenser une fidélité sans faille.</p>
+        <p><span class="highlight">Éternel</span> Les membres Éternels sont les piliers du Casino Kramer. L’accès à ce grade vous permet d’avoir une place privilégiée dans tous les événements du casino, des mises de haute valeur et des lots d'une splendeur inégalée. Vous serez en contact direct avec nos conseillers les plus haut placés, prêts à vous offrir un service digne de votre statut. Les Éternels ne connaissent que l'excellence.</p>
+        <p><span class="highlight">Infini</span> L'ultime distinction. Infini est plus qu’un grade, c’est un style de vie. Ce niveau vous accorde un accès illimité aux meilleures tables, à des bénéfices insensés et à des expériences de luxe réservées à une élite au-delà de tout. Chaque désir est exaucé, chaque caprice satisfait. À ce rang, les règles sont redéfinies et vous n’êtes limité que par votre propre imagination. L'infini vous attend.</p>
+        <p>Ainsi, chaque palier est une promesse,<span class="highlight">un chemin vers la grandeur</span>. Le Casino Kramer ne se contente pas de vous offrir des lots : il vous offre un voyage vers un luxe sans fin, un accès privilégié aux plus grandes opportunités de notre époque. Après tout, qui sait où vous pourriez aller une fois que vous avez goûté à la richesse Kramer ?"</p>
+    </div>
+
+    <div class="contenu">
+        <!-- Onglet 1 -->
+        <section id="onglet1" class="onglet">
+            <div class="titre-sous-banniere" id="onglet1-sous-titre">Pallier Commun</div>
+            <div class="objets">
+                <div class="objet">
+                    <img src="https://static.wikia.nocookie.net/nomanssky/images/8/8f/D%C3%A9tecteur_d%27anomalies.png/revision/latest?cb=20200720125752&path-prefix=fr" alt="Détecteur Anomalie Biologique">
+                    <div class="titre-sur-image">Détecteur Anomalie Biologique</div>
+    <div class="description" style="display: none;"> Petit appareil portable qui émet un bip lorsqu’il détecte la présence d’une entité non humaine dans un rayon de 10 mètres.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://aerospace.org/sites/default/files/styles/hero_small/public/2019-03/AdobeStock_32158407.jpeg?itok=tlKcDjTA" alt="Émetteur de Brouillage">
+                    <div class="titre-sur-image">Émetteur de Brouillage</div>
+                    <div class="description" style="display: none;">Un petit dispositif capable de brouiller les signaux électriques ainsi que les sens de certaines créatures, limitant leurs mouvements ou les empêchant de se camoufler.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://image.noelshack.com/fichiers/2024/50/2/1733848975-cryo-grenade-by-kinoman22-di80wv0-pre.png" alt="Grenade Cryogénique">
+                    <div class="titre-sur-image">Grenade Cryogénique</div>
+    <div class="description" style="display: none;">Une grenade libérant un froid intense en quelques secondes, gelant temporairement une créature ou une personne, peut également ralentir son déplacement et potentielle régénération.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1247/1247074.png" alt="Carte Accès Modifiée">
+                    <div class="titre-sur-image">Cartes Accès Modifiées</div>
+    <div class="description" style="display: none;">Permet d’ouvrir ou de verrouiller certaines sections du vaisseau et de manipuler les passages d’aération pour les isoler ou les renfermer</div>
+                </div>
+                <div class="objet">
+                    <img src="https://cdnb.artstation.com/p/assets/images/images/003/258/213/large/luis-esteves-injector-profile-luisesteves-111513.jpg?1471746036" alt="Kit de Décontamination Rapide">
+                    <div class="titre-sur-image">Kit de Décontamination Rapide</div>
+    <div class="description" style="display: none;">Spray antiseptique et sérum pouvant retarder l’infection, la maladie ou les blessures d’un joueur légèrement contaminé.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://cdnb.artstation.com/p/assets/images/images/054/704/093/large/polyrendr-01.jpg?1665156115" alt="Scanner Onde Neuronale">
+                    <div class="titre-sur-image">Scanners d’Ondes Neuronales</div>
+    <div class="description" style="display: none;">Lunettes spéciales qui permettent de lire les ondes neuronales, révélant si un personnage ou une créature est en partie infecté.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://image.noelshack.com/fichiers/2024/50/2/1733849402-craiyon-174954-concept-art-of-a-sci-fi-lighter-detailed-angular-design-yellow-black-and-grey-hd.png" alt="Module de Déconnexion Urgence">
+                    <div class="titre-sur-image">Module de Déconnexion d’Urgence</div>
+    <div class="description" style="display: none;">Permet aux techniciens de désactiver temporairement une section (lumières, ventilation, gravité) pour contrôler une zone ou créer une diversion.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://png.pngtree.com/png-vector/20240905/ourmid/pngtree-futuristic-metallic-sphere-with-blue-glowing-eye-3d-render-png-image_13758550.png" alt="Caméra Fixable de Surveillance">
+                    <div class="titre-sur-image">Caméra Fixable de Surveillance</div>
+    <div class="description" style="display: none;">Petite caméra portable, pouvant être fixée sur les murs pour surveiller certaines zones.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://fdczvxmwwjwpwbeeqcth.supabase.co/storage/v1/object/public/images/1de4a307-14e8-4a21-ac10-6a554f139599/eb5b3b74-fcc9-4d30-89d0-e16413b0742f.png" alt="Générateur de Bruit Directionnel">
+                    <div class="titre-sur-image">Générateur de Bruit Directionnel</div>
+    <div class="description" style="display: none;">Un dispositif qui projette des sons enregistrés, comme des voix humaines ou des sons mécaniques, dans une direction choisie.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://www.brokenegggames.com/media/catalog/product/cache/1/thumbnail/960x/17f82f742ffe127f42dca9de82fb58b1/c/y/cyberpunkcredit1-2_1.jpg" alt="50 Stellar Credit">
+                    <div class="titre-sur-image">50 Stellar Credit</div>
+    <div class="description" style="display: none;">Des crédits offert par la Maison Kramer</div>
+                </div>
+                <div class="objet">
+                    <img src="https://static.vecteezy.com/system/resources/previews/028/792/885/large_2x/purple-sci-fi-energy-flask-with-pure-background-ai-generative-free-photo.jpg" alt="Flacon de Phéromones Camouflantes">
+                    <div class="titre-sur-image">Flacon de Phéromones Camouflantes</div>
+    <div class="description" style="display: none;">Une fiole contenant des phéromones capables de masquer l’odeur d’un humain.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://public.blenderkit.com/thumbnails/assets/217cdf3ea1384a81bef4e4ecaa83a3e1/files/thumbnail_1b374edb-b878-4909-b2ef-8b36cfbb3c34.png.2048x2048_q85.png" alt="Tablette de Cartographie des Tunnels Aération">
+                    <div class="titre-sur-image">Tablette de Cartographie des Tunnels d’Aération</div>
+    <div class="description" style="display: none;">Une carte holographique des tunnels de maintenance et de ventilation, essentielle pour se déplacer discrètement.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://live.cdn.renderosity.com/marketplace/products/128324/lightbox-images/408731/image_511b4b0f10c8ac053aa55d76be92b712.jpg" alt="Sonde Autonome Exploration">
+                    <div class="titre-sur-image">Sonde Autonome d’Exploration</div>
+    <div class="description" style="display: none;">Petit drone volant, équipé de lumière, d’une caméra et d’une connexion audio pour explorer les zones dangereuses à distance</div>
+                </div>
+                <div class="objet">
+                    <img src="https://static.vecteezy.com/system/resources/previews/029/282/362/non_2x/purple-sci-fi-energy-flask-with-pure-background-ai-generative-free-photo.jpg" alt="Injecteur de Séromécanismes">
+                    <div class="titre-sur-image"> Injecteur de Séromécanismes</div>
+                    <div class="description" style="display: none;">Une seringue remplie de substances bio-mécaniques, capable de booster temporairement les capacités physiques ou mentales</div>
+                </div>
+                <div class="objet">
+                    <img src="https://img.freepik.com/photos-premium/arme-science-fiction-lumieres-bleues_777078-17511.jpg" alt="Torche à Énergie Plasma">
+                    <div class="titre-sur-image">Torche à Énergie Plasma</div>
+    <div class="description" style="display: none;">Outil de soudure qui peut également servir d’arme à courte portée, très efficace contre les tissus biologiques</div>
+                </div>
+                <div class="objet">
+                    <img src="https://static.wikia.nocookie.net/odyssey-rp/images/3/39/Hologram.jpg/revision/latest?cb=20220915160353" alt="Projecteur Holographique de Leurre">
+                    <div class="titre-sur-image">Projecteur Holographique de Leurre</div>
+    <div class="description" style="display: none;">Génère des hologrammes temporaires de formes humaines, utiles pour créer des diversions</div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Onglet 2 -->
+        <section id="onglet2" class="onglet" style="display: none;">
+            <div class="titre-sous-banniere" id="onglet2-sous-titre">Pallier Rare</div>
+            <div class="objets">
+                <div class="objet">
+                    <img src="https://p.turbosquid.com/ts-thumb/yu/jYsL9P/xD/medkit2/jpg/1644238197/600x600/fit_q87/4927cb8223b60be0f2259d70ef62dc6531b49591/medkit2.jpg" alt="Modulateur Synaptique">
+                    <div class="titre-sur-image">Modulateur Synaptique</div>
+    <div class="description" style="display: none;">Un appareil portable permettant de moduler temporairement vos capacités mentales, comme l’amélioration de l’intuition ou de la mémoire. Risque d'effets secondaires</div>
+                </div>
+                <div class="objet">
+                    <img src="https://cdn.prod.website-files.com/5c1bb997cb1dd611a0e6c8ce/5f45de88721cd790dd49e031_WestStudio-Crucible-125.jpg" alt="Bio-Tube Analyse Avancée">
+                    <div class="titre-sur-image">Bio-Tube d'Analyse Avancée</div>
+    <div class="description" style="display: none;">Petit instrument capable d’analyser les éléments organiques et toxiques, utile pour les missions d'exploration où la santé est en jeu.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://i.etsystatic.com/18390938/r/il/4f1842/5229690775/il_fullxfull.5229690775_gl55.jpg" alt="DataClé Codée">
+                    <div class="titre-sur-image">DataClé Codée</div>
+    <div class="description" style="display: none;">Clé d'accès pour interagir avec les ordinateurs scientifiques ou bases de données du vaisseau. Peut être utilisée pour intercepter des informations cruciales ou résoudre des mystères du passé.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://i.redd.it/8lwe938dna791.png" alt="Kit de Réparation Portable">
+                    <div class="titre-sur-image">Kit de Réparation Portable</div>
+    <div class="description" style="display: none;">Contient des micro-outils, composants de base et circuits imprimés pour les réparations d'urgence.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://img.freepik.com/premium-photo/3d-teleportation-device-icon-sci-fi-instant-travel-tool-illustration-logo_762678-89720.jpg?w=360" alt="Sonde Cartographique Miniature">
+                    <div class="titre-sur-image">Sonde Cartographique Miniature</div>
+    <div class="description" style="display: none;">Unité de sondage programmable pour explorer et cartographier des salles inexplorées ou identifier les dangers</div>
+                </div>
+                <div class="objet">
+                    <img src="https://png.pngtree.com/thumb_back/fw800/background/20230722/pngtree-d-illustration-of-a-sleek-futuristic-sci-fi-container-on-a-image_3766346.jpg" alt="Module Énergie de Secours">
+                    <div class="titre-sur-image">Module d'Énergie de Secours</div>
+    <div class="description" style="display: none;">Batterie rechargeable qui peut temporairement alimenter un secteur du vaisseau ou un équipement en panne.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://preview.redd.it/akxkmz2m27p81.jpg?width=1080&format=pjpg&auto=webp&s=628b5f7f77db509d8cc2e60dec5c7a2873d5fc0b" alt="Générateur de Champ de Force Temporaire">
+                    <div class="titre-sur-image">Générateur de Champ de Force Temporaire</div>
+    <div class="description" style="display: none;">Bouclier portable qui protège l’utilisateur contre les agressions physiques ou les tirs pendant une courte durée.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://i.pinimg.com/originals/9a/ba/50/9aba506cf00c1bbdacc094e803dae0f9.jpg" alt="Bâton Électromagnétique">
+                    <div class="titre-sur-image">Bâton Électromagnétique</div>
+    <div class="description" style="display: none;">Arme non létale, utilisée pour dissuader ou neutraliser un adversaire sans le blesser gravement.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://as1.ftcdn.net/v2/jpg/01/95/00/84/1000_F_195008428_bjHe1M9WRleJOpKlS70KgIGvodwdFxQh.jpg" alt="Puce de Reconnaissance Tactique">
+                    <div class="titre-sur-image">Puce de Reconnaissance Tactique</div>
+    <div class="description" style="display: none;">Dispositif d’analyse des environnements hostiles qui donne un aperçu des menaces immédiates et suggère les tactiques adaptées.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://i.pinimg.com/originals/df/0e/d7/df0ed7ad2e696e8dd71ffe83714b03c5.png" alt="Vérificateur de Vérité">
+                    <div class="titre-sur-image">Vérificateur de Vérité</div>
+    <div class="description" style="display: none;">Petit appareil capable de détecter les micro-expressions et signes de mensonges pendant une conversation, avec une marge d'erreur.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://media.sketchfab.com/models/ee1fde7ec1514fd5a61790809ebd46a6/thumbnails/6b33b2526aa54516aa5f0a7dd3a9212f/34a25f022fdb4324ad6fc701224754a5.jpeg" alt="Dossier Diplomatique Compact">
+                    <div class="titre-sur-image">Dossier Diplomatique Compact</div>
+    <div class="description" style="display: none;">Base de données portable avec informations stratégiques et psychologiques sur les membres influents des autres maisons.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://media.sketchfab.com/models/a05e9be72cbc488681ea6c125ac01bd8/thumbnails/5ab799a7e20448cf935b3f8ea4981851/4b6efffeb238438ca380596f452725e2.jpeg" alt="Jeton de Savoir Perdu">
+                    <div class="titre-sur-image">Jeton de Savoir Perdu</div>
+    <div class="description" style="display: none;">Pièce rare, remplie de données historiques inaccessibles pour d'autres maisons. Permet d'accéder à des salles ou des bases de données interdites sous certaines conditions.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://cdna.artstation.com/p/assets/images/images/051/810/352/large/b2rocks-b2rocks-jetpack-02.jpg?1658233720" alt="Jetpack de Récupération">
+                    <div class="titre-sur-image">Jetpack de Récupération</div>
+    <div class="description" style="display: none;">Petit propulseur utilisable uniquement en zéro-gravité, utile pour explorer les sections en dehors du vaisseau.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://i.pinimg.com/originals/4e/9b/a1/4e9ba1f81bb13f18b7728d8f051af9a5.jpg" alt="Scanner Ancestral">
+                    <div class="titre-sur-image">Scanner Ancestral</div>
+    <div class="description" style="display: none;">Dispositif permettant de localiser d’anciens portails, passages secrets ou restes d'objets extraterrestres.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://img.freepik.com/premium-photo/colorful-sci-fi-themed-hang-tag-spaceship-shaped-with-futuristic-deta-creative-hang-tag-collection_1020495-68271.jpg" alt="Balise de transmission">
+                    <div class="titre-sur-image">Balise de transmission</div>
+    <div class="description" style="display: none;">Appareil de communication rare, permettant d'envoyer un message longue distance pour un appel d’aide, limité en portée mais précieux en cas de crise</div>
+                </div>
+                <div class="objet">
+                    <img src="https://img-new.cgtrader.com/items/2373554/560291aec9/large/sci-fi-chip-3d-model-560291aec9.jpg" alt="Puce de Crédit Énergétique">
+                    <div class="titre-sur-image">Puce de Crédit Énergétique</div>
+    <div class="description" style="display: none;">Monnaie rare du vaisseau, servant de carburant ou de ressource d’échange. Certains appareils du vaisseau ne peuvent être alimentés que par cette puce.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/78247687887291.5dc575e82fed8.png" alt="Répertoire Offres">
+                    <div class="titre-sur-image">Répertoire d’Offres</div>
+    <div class="description" style="display: none;">Base de données des ressources disponibles sur le vaisseau et des besoins des maisons, permettant aux joueurs de trouver des alliances et des échanges.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://preview.redd.it/starfield-archive-room-3840x2160-v0-w02d9qzdxtsb1.jpg?width=640&crop=smart&auto=webp&s=bc3ff8777fcb778ed5f50659edcf86298614f428" alt="Cube Archivage">
+                    <div class="titre-sur-image">Cube d’Archivage</div>
+    <div class="description" style="display: none;">Dispositif permettant d’enregistrer et de sécuriser des accords de marchandage pour éviter les conflits commerciaux.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://i.pinimg.com/originals/77/2e/00/772e0002e72b7fa4f957865f3c518cfa.jpg" alt="Drone Domestique Autonome">
+                    <div class="titre-sur-image">Drone Domestique Autonome</div>
+    <div class="description" style="display: none;">Petit robot multifonction, parfait pour de petites tâches quotidiennes, l'espionnage ou le sabotage discret.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://cdnb.artstation.com/p/assets/images/images/061/134/627/large/aistation-leonardo-diffusion-scifi-futuristic-vr-glasses-3.jpg?1680091856" alt="Masque à Réalité Augmentée">
+                    <div class="titre-sur-image">Masque à Réalité Augmentée</div>
+    <div class="description" style="display: none;">Permet de voir des repères invisibles aux autres, ou des écrans interactifs lors de la navigation dans des sections techniques du vaisseau.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://cdn.prod.website-files.com/6098517dd66f3f8cda46068d/6098517dd66f3f0d30460760_Krypton%20on%20floor.png" alt="Médaillon de Chance">
+                    <div class="titre-sur-image">Médaillon de Chance</div>
+    <div class="description" style="display: none;">Une sorte de talisman électronique, très prisé par la maison Kymal. Peut améliorer la probabilité de succès de certaines actions pour un temps limité.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://cdn.vectorstock.com/i/500p/15/07/futuristic-circle-3d-lab-with-hud-elements-vector-37731507.jpg" alt="Projecteur Illusion">
+                    <div class="titre-sur-image">Projecteur d’Illusion</div>
+    <div class="description" style="display: none;">Petit projecteur holographique permettant de créer une illusion artistique temporaire, utilisé pour divertir ou déstabiliser un adversaire.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://img-new.cgtrader.com/items/4020046/eddb794599/large/simple-sci-fi-pen-3d-model-obj-fbx-blend.jpg" alt="Stylet à Nano-Ink">
+                    <div class="titre-sur-image">Stylet à Nano-Ink</div>
+                    <div class="description" style="display: none;">Outil de création artistique qui permet de faire de l'art sur n’importe quelle surface. Peut aussi être utilisé pour marquer des endroits spécifiques sur le vaisseau.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://imgcdn.stablediffusionweb.com/2024/11/17/43b1c563-00e1-49cc-85c4-bf873776f384.jpg" alt="Diffuseur Émotion">
+                    <div class="titre-sur-image">Diffuseur d’Émotion</div>
+    <div class="description" style="display: none;">Outil d'ambiance qui affecte subtilement l'humeur des personnes proches (relaxant, stressant, euphorisant), utile pour manipuler une foule ou une conversation.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://images.stockcake.com/public/7/1/0/7106d8a6-2d5f-42a9-ae78-918f2e5416fd_large/futuristic-science-flask-stockcake.jpg" alt="Modules de Compétence (Multi-Usage)">
+                    <div class="titre-sur-image">Modules de Compétence (Multi-Usage)</div>
+    <div class="description" style="display: none;">Dispositif implantable qui permet à un joueur de débloquer temporairement des compétences d'une autre maison.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://i.pinimg.com/originals/e3/e1/aa/e3e1aa888e1f12349c7bcdd9373ffee7.png" alt="CryoClé">
+                    <div class="titre-sur-image">CryoClé</div>
+    <div class="description" style="display: none;">Clé électronique qui permet de contrôler les caissons de cryogénisation et de libérer (ou emprisonner) des personnes.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://i.redd.it/duvvy9jrep491.jpg" alt="Nano-fabricateur Personnel">
+                    <div class="titre-sur-image">Nano-fabricateur Personnel</div>
+    <div class="description" style="display: none;">Appareil permettant de créer des objets de base nécessaires pour des réparations, du commerce, ou même des pièges, en utilisant des matériaux de récupération.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://www.brokenegggames.com/media/catalog/product/cache/1/thumbnail/960x/17f82f742ffe127f42dca9de82fb58b1/c/y/cyberpunkcredit1-2_1.jpg" alt="100 Stellar Credit">
+                    <div class="titre-sur-image">100 Stellar Credit</div>
+    <div class="description" style="display: none;">Des crédits offert par la Maison Kramer</div>
+                </div>
+                <div class="objet">
+                    <img src="https://www.brokenegggames.com/media/catalog/product/cache/1/thumbnail/960x/17f82f742ffe127f42dca9de82fb58b1/c/y/cyberpunkcredit1-2_1.jpg" alt="200 Stellar Credit">
+                    <div class="titre-sur-image">200 Stellar Credit</div>
+    <div class="description" style="display: none;">Des crédits offert par la Maison Kramer</div>
+                </div>
+                <div class="objet">
+                    <img src="https://www.brokenegggames.com/media/catalog/product/cache/1/thumbnail/960x/17f82f742ffe127f42dca9de82fb58b1/c/y/cyberpunkcredit1-2_1.jpg" alt="300 Stellar Credit">
+                    <div class="titre-sur-image">300 Stellar Credit</div>
+    <div class="description" style="display: none;">Des crédits offert par la Maison Kramer</div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Onglet 3 -->
+        <section id="onglet3" class="onglet" style="display: none;">
+            <div class="titre-sous-banniere" id="onglet2-sous-titre">Pallier Ancien</div>
+            <div class="objets">
+                <div class="objet">
+                    <img src="https://flux-image.com/_next/image?url=https%3A%2F%2Fai.flux-image.com%2Fflux%2Fda8be337-9e71-46dd-9f63-335de61e699b.jpg&w=3840&q=75" alt="Eclateur Quantique">
+                    <div class="titre-sur-image">Eclateur Quantique</div>
+    <div class="description" style="display: none;">Arme redoutable capable de désactiver un système électronique à distance, comme des portes, terminaux ou robots ennemis. Nécessite un temps de recharge important et un savoir-faire technique précis pour éviter les surtensions. Utile pour un sabotage ciblé ou une intervention rapide.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://i.pinimg.com/474x/61/51/8c/61518c2cf584d2c2e553410f1d190b4e.jpg" alt="Sceptre de Commande Neurale">
+                    <div class="titre-sur-image">Sceptre de Commande Neurale</div>
+    <div class="description" style="display: none;">Objet unique, sous la forme d’un manche qui envoie des signaux cérébraux via des nanocapteurs. Il permet d’influencer légèrement les pensées d'un autre joueur, ce qui peut provoquer des révélations inattendues. L’utilisateur doit toutefois subir une contrepartie (épuisement, mal de tête, etc.)</div>
+                </div>
+                <div class="objet">
+                    <img src="https://as1.ftcdn.net/v2/jpg/04/47/25/24/1000_F_447252420_L1w6rNnSzclGe6ymZE7f2GYKXHnRVl9X.jpg" alt="Clé des Sables du Temps">
+                    <div class="titre-sur-image">Clé des Sables du Temps</div>
+    <div class="description" style="display: none;">Objets trouvés uniquement dans les sections les plus anciennes du vaisseau, ces clés rares permettent d'accéder aux journaux de bord abandonnés d’un passager cryogénisé, renfermant des informations vitales sur les faiblesses du vaisseau, les origines de la mission et des intrigues passées. La clé s’use après chaque utilisation, en limitant les usages possibles.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://www.rmory.net/wp-content/uploads/2013/11/rmorystudios_mindworld.jpg" alt="Émetteur Onde Gravitationnelle">
+                    <div class="titre-sur-image">Émetteur d’Onde Gravitationnelle</div>
+    <div class="description" style="display: none;">Petit appareil activant une onde gravitationnelle, capable de déséquilibrer tout un groupe d’ennemis proches en leur imposant une force écrasante ou en faussant leur perception de la gravité. Utile pour disperser ou neutraliser des adversaires. Il peut cependant épuiser les réserves d'énergie de celui qui l’emploie</div>
+                </div>
+                <div class="objet">
+                    <img src="https://i.ytimg.com/vi/6-3W7oBYS0Y/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AHUBoAC4AOKAgwIABABGDIgZShlMA8=&rs=AOn4CLAIIC_A_yC7OlhR6v-qdlVfcfraEg" alt="Transpondeur de Ravitaillement Fantôme">
+                    <div class="titre-sur-image">Transpondeur de Ravitaillement Fantôme</div>
+    <div class="description" style="display: none;">Dispositif permettant d'envoyer une fausse demande de ravitaillement vers un terminal principal du vaisseau, attirant à lui des ressources ou équipements précieux des autres maisons. Cependant, ce transpondeur est traçable si découvert, risquant de révéler la position et l'identité de l'utilisateur. À utiliser avec prudence pour ne pas attirer les soupçons !</div>
+                </div>
+                <div class="objet">
+                    <img src="https://cdna.artstation.com/p/assets/images/images/039/868/488/large/a-guang_ray-injection-gun002.jpg?1627191683" alt="Injecteur Éveil Accéléré">
+                    <div class="titre-sur-image">Injecteur d’Éveil Accéléré</div>
+    <div class="description" style="display: none;">Seringue contenant un mélange de stimulants avancés capable de décupler momentanément les capacités physiques et mentales de son utilisateur. Mais l'effet est dangereux, provoquant des effets secondaires comme la dépendance ou des hallucinations temporaires. Utile en situations désespérées où l'utilisateur doit survivre ou accomplir une tâche vitale.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://i.ytimg.com/vi/31bn9Iwi0zY/maxresdefault.jpg" alt="Nexus de Fusion Cognitive">
+                    <div class="titre-sur-image">Nexus de Fusion Cognitive</div>
+    <div class="description" style="display: none;">Objet rare permettant à plusieurs personnes de relier temporairement leurs pensées, augmentant leurs capacités d'analyse et de communication. Il crée une synergie unique, parfaite pour résoudre des énigmes complexes à distance. À noter que l’expérience est intense et peut provoquer des traumatismes émotionnels</div>
+                </div>
+                <div class="objet">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/15eab3103981637.5f58f204ab1f3.jpg" alt="Consolateur Éthérique de la Cryogénisation">
+                    <div class="titre-sur-image">Consolateur Éthérique de la Cryogénisation</div>
+    <div class="description" style="display: none;">Équipement permettant d’émettre des signaux apaisants et de prolonger les périodes de sommeil en cryogénisation, ou de "ré-endormir" temporairement un membre éveillé.</div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Onglet 4 -->
+        <section id="onglet4" class="onglet" style="display: none;">
+            <div class="titre-sous-banniere" id="onglet2-sous-titre">Pallier Eternel</div>
+            <div class="objets">
+                <div class="objet">
+                    <img src="https://cdna.artstation.com/p/assets/images/images/006/982/530/large/sergey-tsimmer-vr-gravitygun4.jpg?1502781679" alt="Annihilateur de Barrière BioTech">
+                    <div class="titre-sur-image">Annihilateur de Barrière BioTech</div>
+    <div class="description" style="display: none;">Cette arme rare peut faire exploser une cloison pour accéder à des sections fermées du vaisseau, ou neutraliser une menace biologique. Cependant, chaque usage à l'intérieur compromet la structure et la sécurité du vaisseau.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://i.pinimg.com/236x/e6/be/b0/e6beb0ce7f8b41496e06c22f2624a4ee.jpg" alt="Stabilisateur de Réalité Temporelle">
+                    <div class="titre-sur-image">Stabilisateur de Réalité Temporelle</div>
+    <div class="description" style="display: none;">Dispositif complexe permettant de ralentir ou accélérer légèrement le temps pour son utilisateur. Cet effet n’est pas perçu par ceux qui ne l’utilisent pas, donnant un avantage stratégique pour éviter des pièges, échapper à une attaque ou manipuler un événement. Son usage peut avoir des effets secondaires graves.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://wallup.net/wp-content/uploads/2019/09/1004997-matrix-sci-fi-science-fiction-action-fighting-futuristic-thriller-noir-adventure-warrior-hacker-gacking-hack-computer-binary-code-reloaded-revolutions-cyberpunk-cyber-punk-technics-virus.jpg" alt="Protocole Oméga - Code Ultime du Vaisseau">
+                    <div class="titre-sur-image">Protocole Oméga - Code Ultime du Vaisseau</div>
+    <div class="description" style="display: none;">Code permettant de reprogrammer un aspect central de la mission ou du fonctionnement du vaisseau : par exemple, forcer un changement de destination, relancer des systèmes cryogéniques, ou modifier les priorités de production des ressources. Ce code est en morceaux.(Il faut en récupérer 3 pour réussir à débloquer l’objet)</div>
+                </div>
+                <div class="objet">
+                    <img src="https://i.pinimg.com/550x/a1/ea/32/a1ea32e9bc273a44bc1e317d2d05807b.jpg" alt="Injecteur de Nanites de Régénération Totale">
+                    <div class="titre-sur-image">Injecteur de Nanites de Régénération Totale</div>
+    <div class="description" style="display: none;">Contenant des nanites capables de régénérer intégralement le corps de l’utilisateur. Peut guérir quelqu’un à un seuil critique ou redonner leurs capacités à des membres gravement blessés. Les nanites se détériorent après une seule utilisation, et l’injecteur devient alors inutilisable.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://orion-uploads.openroadmedia.com/xl_1c31b83554b8-black-mirror4.jpg" alt="Miroir des Mondes Distants">
+                    <div class="titre-sur-image">Miroir des Mondes Distants</div>
+    <div class="description" style="display: none;">Miroir au pouvoir ancien permettant de voir des réalités parallèles et d’autres futurs possibles, pour obtenir des informations critiques sur les conséquences de certaines décisions. Cependant, la vérité est souvent brouillée, et la vision peut également tromper l’utilisateur si son esprit est trop faible.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://www.brokenegggames.com/media/catalog/product/cache/1/thumbnail/960x/17f82f742ffe127f42dca9de82fb58b1/c/y/cyberpunkcredit1-2_1.jpg" alt="500 Stellar Credit">
+                    <div class="titre-sur-image">500 Stellar Credit</div>
+                    <div class="description" style="display: none;">Des crédits offert par la Maison Kramer</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Onglet 5 -->
+        <section id="onglet5" class="onglet" style="display: none;">
+            <div class="titre-sous-banniere" id="onglet2-sous-titre">Pallier Infini</div>
+            <div class="objets">
+                <div class="objet">
+                    <img src="https://w0.peakpx.com/wallpaper/790/111/HD-wallpaper-blackhole-3d-alastair-art-cosmos-dark-engine-flare-galaxy-gargantuan-glow-peaceful-sci-fi-science-fiction-scifi-space-spaceship-star-stars.jpg" alt="Éclat de Étoile Noire">
+                    <div class="titre-sur-image">L’Éclat de l’Étoile Noire</div>
+    <div class="description" style="display: none;">Une sphère noire mate, dense et lourde, taillée dans un fragment d’étoile éteinte, qui semble absorber la lumière autour d’elle. Le porteur peut manipuler la gravité dans une zone autour de lui, pouvant la modifier pour immobiliser des ennemis, flotter dans l'air, ou même tordre des parois métalliques. Utiliser cet objet peut cependant épuiser le porteur, car il pompe l’énergie vitale à chaque usage intensif</div>
+                </div>
+                <div class="objet">
+                    <img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/7db726d6-699d-429f-a04c-7266ea7c538c.jpg" alt="La Lance de la Légion">
+                    <div class="titre-sur-image">La Lance de la Légion</div>
+    <div class="description" style="display: none;">Confère au porteur des compétences tactiques exceptionnelles, comme la capacité de ressentir les mouvements ennemis dans une zone ou de comprendre instantanément les faiblesses d’une créature extraterrestre. Peut être utilisée en combat pour infliger des dégâts massifs, mais chaque attaque épuise une partie de l’énergie vitale du porteur.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://as2.ftcdn.net/v2/jpg/04/23/48/93/1000_F_423489385_4fknjB6QbFq9X3yvuc0Xza8aWo7AXOGR.jpg" alt="Le Miroir des Échos">
+                    <div class="titre-sur-image">Le Miroir des Échos</div>
+    <div class="description" style="display: none;">Un petit miroir ovale argenté, à la surface liquide et changeante, qui semble montrer des scènes du passé ou des fragments de mémoire. Il permet de revisiter des moments cruciaux de l'histoire du vaisseau ou de révéler des secrets cachés d’autres membres de l’équipage. Parfois, il peut même prédire un futur possible si le porteur est prêt à sacrifier une partie de sa mémoire personnelle en échange</div>
+                </div>
+                <div class="objet">
+                    <img src="https://images.nightcafe.studio/jobs/WQDFnMsH5dcmCozzJ1vu/WQDFnMsH5dcmCozzJ1vu--1--t44jv.jpg?tr=w-1600,c-at_max" alt="Le Chant de Aube">
+                    <div class="titre-sur-image">Le Chant de l’Aube</div>
+    <div class="description" style="display: none;">Une petite boîte musicale ornée de gravures célestes, produisant une mélodie étrange et apaisante qui ne semble jamais se répéter. En jouant la mélodie, les membres du vaisseau peuvent apaiser temporairement toutes les tensions, guérir des blessures légères et renforcer le moral des équipes proches. Un usage excessif peut rendre le porteur mélancolique et lier son esprit aux émotions passées qu’il a apaisées</div>
+                </div>
+                <div class="objet">
+                    <img src="https://clublifted.com/image/articles/weight-lifting-gloves-with-a-touch-of-tech-reviewing-the-latest-innovations-in-grip-assistance-f2d3c16e-ea2a-419f-9726-5d15619d78f0.png?w=900&h=500&crop=1" alt="Les Gantelets de Ancienne Flotte">
+                    <div class="titre-sur-image">Les Gantelets de l’Ancienne Flotte</div>
+    <div class="description" style="display: none;">Ces gantelets permettent d'accéder à toutes les interfaces et données, même les plus protégées. Le porteur peut aussi manipuler à distance des mécanismes de sécurité, comme les portes verrouillées ou les systèmes de défense. Cependant, ces gants augmentent l'adrénaline du porteur, le rendant potentiellement agressif ou insensible.</div>
+                </div>
+                <div class="objet">
+                    <img src="https://thumbs.dreamstime.com/b/fire-stone-yellow-sparks-asteroid-firestone-game-asset-sci-fi-items-rpg-d-icon-polish-rendering-high-quality-premium-unreal-273890289.jpg" alt="Éclat des Sept Soleils">
+                    <div class="titre-sur-image">L’Éclat des Sept Soleils</div>
+    <div class="description" style="display: none;">Une pierre lumineuse aux reflets dorés et rouges, qui émet une chaleur réconfortante et puissante. En tenant la pierre, le porteur peut générer une lumière intense capable de repousser ou blesser des créatures extraterrestres sensibles à la lumière. Il peut également projeter une aura qui redonne de l’énergie à ceux qui en ont besoin. Le pouvoir s’accompagne d’une fatigue intense, ne pouvant être utilisé que dans les situations les plus extrêmes</div>
+                </div>
+                <div class="objet">
+                    <img src="https://image.noelshack.com/fichiers/2024/50/2/1733852753-d1tecvv-44e25756-4416-405b-89d5-98642f505ef4.jpg" alt="Le Codex Infini">
+                    <div class="titre-sur-image">Le Codex de l’Infini</div>
+    <div class="description" style="display: none;">Un petit livre métallique contenant des inscriptions mouvantes, difficile à lire sans concentration intense. Permet d'accéder à une mine de connaissances universelles et techniques, qui peut guider le porteur dans la résolution d'énigmes scientifiques ou l'activation de technologies inconnues. Chaque lecture prend un lourd tribut sur l’esprit, et trop de savoir peut entraîner une perte de repères dans la réalité</div>
+                </div>
+                <div class="objet">
+                    <img src="https://cdnb.artstation.com/p/assets/images/images/006/544/875/large/tanaka-musewe-sci-fi-orb-update01.jpg?1499400974" alt="Œil du Néant">
+                    <div class="titre-sur-image">L’Œil du Néant</div>
+    <div class="description" style="display: none;">Une petite orbe d’un noir absolu, qui donne l’impression d’être un trou dans l’espace. Ce dispositif permet au porteur de voir à travers les murs et les obstacles dans un certain rayon et de détecter toute présence biologique ou mécanique. L’utilisation prolongée risque de provoquer des hallucinations visuelles, à mesure que la frontière entre le réel et l’invisible devient floue</div>
+                </div>
+                <div class="objet">
+                    <img src="https://imgcdn.stablediffusionweb.com/2024/9/23/5780cb59-6d6c-44a9-931e-b9ac72d389d9.jpg" alt="Artefact Harmonie">
+                    <div class="titre-sur-image">L’Artefact d’Harmonie</div>
+    <div class="description" style="display: none;">Un médaillon argenté en forme de cercle parfait, finement gravé de motifs géométriques complexes. Permet au porteur d’équilibrer les énergies autour de lui, réduisant les tensions entre membres, stabilisant l’environnement du vaisseau et apaisant les esprits même les plus troublés. Lors d'une utilisation extrême, il peut même arrêter les combats en projetant un champ pacificateur. Cependant, chaque usage draine les émotions du porteur, le rendant de plus en plus apathique</div>
+                </div>
+                <div class="objet">
+                    <img src="https://cdnb.artstation.com/p/assets/images/images/071/875/827/large/cyber-frame-prime-a1f472ee-b238-4a0b-bb0f-0a16c14ab9a3.jpg?1706128454" alt="La Lame Exode">
+                    <div class="titre-sur-image">La Lame de l’Exode</div>
+    <div class="description" style="display: none;">Une épée courte forgée dans un alliage sombre et lisse, pratiquement indestructible et extrêmement tranchante. Cette arme offre une puissance de destruction redoutable, capable de trancher même des alliages de sécurité du vaisseau. Elle accroît également la force et la résistance du porteur dans des combats rapprochés. Cependant, l’esprit du porteur est envahi de souvenirs de batailles passées, le plongeant peu à peu dans un état de combat perpétuel et affectant sa perception de la réalité</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="trademark">
+        <img src="https://image.noelshack.com/fichiers/2024/50/4/1733995711-comet-spark.png" alt="Trademark Logo" class="trademark-logo">
+        <span>&#174; Kramer Corporation, all rights reserved</span> <!-- Le texte de la marque déposée -->
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('menu-ouvert');
+        }
+    </script>
+
+    <script src="js.js"></script>
+</body>
+</html>
